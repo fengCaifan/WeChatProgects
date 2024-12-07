@@ -1,0 +1,12 @@
+<!--pages/login.wxml-->
+<text>登录</text>
+
+<button bindtap="tapLogin">点击登录</button>
+
+<button bindtap="storageWrite">写入缓存</button>
+
+<button bindtap="storageRead">读取缓存</button>
+<view class="缓存">
+  <view>key1: {{storageValue1}}</view>
+  <view>key2: {{storageValue2}}</view>
+</view>

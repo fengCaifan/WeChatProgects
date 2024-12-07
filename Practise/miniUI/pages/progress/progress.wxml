@@ -1,0 +1,31 @@
+<!--pages/progress.wxml-->
+<text>progress与数据绑定</text>
+<view class="time-box">
+  <text>当前时间:{{time}}</text>
+</view>
+<view wx:if="{{length > 5}}">1</view>
+<view wx:elif="{{length > 2}}">2</view>
+<view wx:else>3</view>
+<block wx:if="{{true}}">
+  <view>view1</view>    
+  <view>view2</view>
+</block>
+<view wx:for="{{array}}">
+  {{index}}: {{item.message}}
+</view>
+
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}: {{itemName.message}}
+</view>
+
+<block wx:for="{{[1,2,3]}}">
+  <view>{{index}}:</view>
+  <view>{{item}}</view>
+</block>
+<view class="1progress-box">
+  <progress percent="20" show-info stroke-width="3"/>
+</view>
+<view class="progress-box">
+  <progress percent="40" color="#10AEFF" active stoke-width="3"/>
+  <icon class="progreess-cencel" type="cancel"></icon>
+</view>

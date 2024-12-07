@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="home_container">
+  <view class="top_container">
+    <view class="section_title"> | 开启新的计分 </view>
+    <mp-grids grids="{{modeArray}}" >
+      <view class="weui-grid">
+        <view class="name_text">{{item.name}}</view>
+        <view class="detail_text">{{item.detail}}</view>
+      </view>
+    </mp-grids>
+    <!-- <view class="mode_list">
+      <button wx:for="{{modeArray}}" class="item_button" id="{{item.id}}" plain="true" bindtap="toAbacus">
+        <view class="name_text">{{item.name}}</view>
+        <view class="detail_text">{{item.detail}}</view>
+      </button>
+    </view> -->
+    <!-- <view class="weui-grids">
+      <view class="grid" wx:for="{{modeArray}}" id="{{item.id}}" bindtap="toAbacus">
+        <view class="name_text">{{item.name}}</view>
+        <view class="detail_text">{{item.detail}}</view>
+      </view>
+    </view> -->
+  </view>
+  <view class="last_container">
+    <view class="section_title"> | 最近一桌 </view>
+  </view>
+</view>
