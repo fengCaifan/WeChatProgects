@@ -1,0 +1,13 @@
+<!--pages/home/home.wxml-->
+<view class="home_page">
+  <view class="func_entry">
+    <button class="func_entry_btn" bind:tap="gotoCaseBookPage">
+      <image src="/assets/case_book.png" class="func_entry_btn_icon"></image>
+      <view class="func_entry_btn_text">病历本</view>
+    </button>
+    <button class="func_entry_btn" bind:tap="gotoApplyPage">
+      <image src="/assets/apply.png" class="func_entry_btn_icon"></image>
+      <view class="func_entry_btn_text">申请报名</view>
+    </button>
+  </view>
+</view>
