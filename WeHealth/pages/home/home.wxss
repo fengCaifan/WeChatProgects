@@ -1,12 +1,26 @@
 /* pages/home/home.wxss */
 
-.home_page {
+.home_header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   background-color: #3350f9;
-  padding: 24rpx;
+  width: 100%;
+  height: 150rpx;
   box-sizing: border-box;
+  padding: 24rpx;
+}
+
+.home_header_title {
+  color:white;
+  font-size: 50rpx;
+  font-weight: 1000;
+}
+
+.home_header_desc {
+  color:white;
+  font-size: 20rpx;
+  font-weight: 400;
 }
 
 .func_entry {
@@ -14,6 +28,8 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  z-index: 1.0;
+  padding: 24rpx 0;
 }
 
 .func_entry_btn {

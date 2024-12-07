@@ -1,5 +1,9 @@
 <!--pages/home/home.wxml-->
 <view class="home_page">
+  <view class="home_header">
+    <view class="home_header_title">We Health</view>
+    <view class="home_header_desc">we health xxxxxx</view>
+  </view>
   <view class="func_entry">
     <button class="func_entry_btn" bind:tap="gotoCaseBookPage">
       <image src="/assets/case_book.png" class="func_entry_btn_icon"></image>
