@@ -41,7 +41,6 @@
   width: 100%;
   border-radius: 16rpx;
   box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.1); /* 阴影 */
-  /* background-color: coral; */
   margin: 0 24rpx;
 }
 

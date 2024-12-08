@@ -7,24 +7,55 @@
       <view class="user_phone"> 手机号 </view>
     </view>
   </view>
+
+  <view class="balance_section">
+    <view class="balance_item">
+      <text>¥ 286.48</text>
+      <text class="balance_item_desc">累计佣金</text>
+    </view>
+    <view class="balance_item">
+      <text>32人</text>
+      <text class="balance_item_desc">下线</text>
+    </view>
+  </view>
+
+  <view class="account_head">
+    <text class="account_info_hint">账单信息</text>
+    <view>
+      <text class="withdrawal_details_hint">提现明细</text>
+      <image class="menu_item_arrow" src="/assets/arrow.png"></image>
+    </view>
+  </view>
+
+  <view class="padding_line"></view>
+  
+  <view class="account_info">
+    <view class="account_item">
+      <text class="account_item_money">¥ 70.88</text>
+      <text class="account_item_desc">待入账</text>
+    </view>
+    <view class="account_item">
+      <text class="account_item_money">¥ 194.6</text>
+      <text class="account_item_desc">可提现</text>
+    </view>
+    <view class="account_item">
+      <text class="account_item_money">¥ 20</text>
+      <text class="account_item_desc">已提现</text>
+    </view>
+  </view>
+
+  <view>
+    <button class="withdraw_btn">提现</button>
+  </view>
+  
+  <view class="section_gap"></view>
   
   <scroll-view class="menu_list" scroll-y>
-    <!-- <block > -->
       <view class="menu_item" wx:for="{{menuItems}}" wx:key="title">
         <image class="menu_item_icon" src="{{item.icon}}"></image>
         <text class="menu_item_title">{{item.title}}</text>
         <image class="menu_item_arrow" src="/assets/arrow.png"></image>
       </view>
-    <!-- </block> -->
   </scroll-view>
 
-  <!-- <view class="menu_list">
-    <block wx:for="{{menuItems}}" wx:key="title">
-      <view class="menu_item">
-        <image class="menu_item_icon" src="{{item.icon}}"></image>
-        <text class="menu_item_title">{{item.title}}</text>
-        <image class="menu_item_arrow" src="/assets/arrow.png"></image>
-      </view>
-    </block>
-  </view> -->
 </view>

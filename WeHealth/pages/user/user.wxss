@@ -1,13 +1,11 @@
 /* pages/user/user.wxss */
+
 .user_header {
   display: flex;
   flex-direction: row;
+  align-items: center;
   background-color: #3350f9;
-  padding: 64rpx 32rpx;
-  /* border-bottom-left-radius: 16rpx;
-  border-bottom-right-radius: 16rpx; */
-  /* height: 20%; */
-  position: relative;
+  padding: 32rpx;
 }
 
 .user_avatar {
@@ -17,13 +15,8 @@
   margin-right: 24rpx;
 }
 
-.user_detail {
-  width: 80%;
-  text-align: left;
+.user_name {
   color: white;
-}
-
-.user_detail.user_name {
   font-size: 32rpx;
   font-weight: bold;
 }
@@ -33,6 +26,81 @@
   font-size: 24rpx;
   font-weight: lighter;
   margin-top: 8rpx;
+}
+
+.balance_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20rpx 0;
+  background-color: #304cec;
+}
+
+.balance_item{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 24rpx;
+}
+
+.balance_item_desc {
+  font-size: small;
+}
+
+.account_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24rpx;
+  background-color: white;
+}
+
+.withdrawal_details_hint {
+  font-size: 24rpx;
+  font-weight: lighter;
+}
+
+.account_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 32rpx;
+}
+
+.account_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 24rpx;
+}
+
+.account_item_money {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.account_item_desc {
+  font-size: 24rpx;
+  font-weight: lighter;
+}
+
+.withdraw_btn {
+  width: 90%;
+  height: 64rpx;
+  background-color: #ff5722;
+  color: white;
+  border-radius: 32rpx;
+  text-align: center;
+  font-size: 32rpx;
+  margin-top: 14rpx;
+  margin-bottom: 14rpx;
 }
 
 .menu_list {
