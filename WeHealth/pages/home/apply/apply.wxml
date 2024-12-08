@@ -1,2 +1,46 @@
 <!--pages/home/apply/apply.wxml-->
-<text>申请报名页面</text>
+<view class="page">
+  <view class="tip">
+    <text class="tip_title">友情提醒</text>
+    <text class="tip_content">
+      您填写的「疾病名称/病史描述」信息，仅用于研究医生判断患者能否入组临床试验。
+    </text>
+  </view>
+
+  <view class="form">
+    <view class="form_item">
+      <text class="form_label">
+        <text class="required">*</text>患者最希望在哪个省份或城市参加新药临床
+      </text>
+      <input class="form_input" placeholder="全国" />
+    </view>
+
+    <view class="form_item">
+      <text class="form_label">
+        <text class="required">*</text>患者称呼
+      </text>
+      <input class="form_input" placeholder="患者或家属报名填写的称呼/昵称" />
+    </view>
+
+    <view class="form_item">
+      <text class="form_label">
+        <text class="required">*</text>年龄
+      </text>
+      <input class="form_input" placeholder="患者身份证上的年龄" />
+    </view>
+
+    <view class="form_item">
+      <text class="form_label">
+        <text class="required">*</text>自述疾病名称
+      </text>
+      <input class="form_input" placeholder="患者疾病名称" />
+    </view>
+
+    <view class="form_item">
+      <text class="form_label">
+        <text class="required">*</text>自述患者体能
+      </text>
+      <input class="form_input" placeholder="体能信息" />
+    </view>
+  </view>
+</view>

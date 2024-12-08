@@ -1,1 +1,52 @@
 /* pages/home/apply/apply.wxss */
+.tip {
+  margin-top: 20rpx;
+  padding: 24rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.tip_title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.tip_content {
+  font-size: 24rpx;
+  font-weight: lighter;
+}
+
+.form {
+  padding: 24rpx;
+}
+
+.form_item {
+  margin-bottom: 20rpx;
+}
+
+.required {
+  color: #ff4d4f;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-right: 5rpx;
+}
+
+.form_label {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+
+.form_input {
+  height: 88rpx;
+  border: 1px solid #dcdcdc;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  color: #333;
+  background-color: #fff;
+}
