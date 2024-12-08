@@ -23,7 +23,7 @@
   },
   "window": {
     "navigationBarBackgroundColor": "#3350f9",
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "backgroundColor": "#bcc0c9",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false

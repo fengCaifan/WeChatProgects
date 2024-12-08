@@ -1,1 +1,73 @@
 /* pages/user/user.wxss */
+.user_header {
+  display: flex;
+  flex-direction: row;
+  background-color: #3350f9;
+  padding: 64rpx 32rpx;
+  /* border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx; */
+  /* height: 20%; */
+  position: relative;
+}
+
+.user_avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-right: 24rpx;
+}
+
+.user_detail {
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+.user_detail.user_name {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.user_phone {
+  color: rgb(231, 221, 221);
+  font-size: 24rpx;
+  font-weight: lighter;
+  margin-top: 8rpx;
+}
+
+.menu_list {
+  max-height: 80%;
+  overflow-y: scroll;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+
+.menu_item {
+  display: flex;
+  align-items: center;
+  padding: 24rpx;
+  margin: 16rpx; /* 增加间隙 */
+  background-color: #ffffff; /* 背景色 */
+  border-radius: 16rpx; /* 圆角 */
+  box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.1); /* 阴影 */
+}
+
+.menu_item_icon {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 24rpx;
+}
+
+.menu_item_title {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.menu_item_arrow {
+  width: 24rpx;
+  height: 24rpx;
+}
