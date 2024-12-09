@@ -7,9 +7,8 @@ Page({
   data: {
     menuItems: [
       {icon: "/assets/desc_test.png", title: "我的资料"},
-      {icon: "/assets/desc_test.png", title: "团队患者"},
-      {icon: "/assets/desc_test.png", title: "生成直播海报"},
-      {icon: "/assets/desc_test.png", title: "线索收集"}
+      {icon: "/assets/desc_test.png", title: "我的团队"},
+      {icon: "/assets/desc_test.png", title: "我的二维码"}
     ],
   },
 
@@ -24,5 +23,20 @@ Page({
     wx.showModal({
       title: '点击了头像昵称'
     })
+  },
+
+  menuItemClicked(e) {
+    const title = e.currentTarget.dataset.title;
+    if (title == "我的团队") {
+      wx.navigateTo({
+        url: '/pages/user/team/team',
+      })
+    } else {
+      wx.showToast({
+        title: `点击了 ${title}`,
+        icon: "none",
+        duration: 2000,
+      });
+    }
   }
 })

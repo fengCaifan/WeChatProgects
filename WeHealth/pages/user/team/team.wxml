@@ -1,0 +1,45 @@
+<!--pages/user/team/team.wxml-->
+
+<view class="team_page">
+  <view class="team_page_header">
+    <text class="team_page_total">
+      总计：<text class="total_number">{{teamList.length}}</text>人
+    </text>
+  </view>
+  
+  <scroll-view class="team_list_container" scroll-y="true">
+    <block wx:for="{{teamList}}" wx:key="id">
+      <view class="team_item">
+        <view class="team_item_header">
+          <text class="team_item_title">我的下线团队 | {{item.name}}</text>
+          <view class="contact">
+            <text class="phone">{{item.phone}}</text>
+            <text class="icon">👁️</text>
+          </view>
+        </view>
+        <view class="team_item_stats">
+          <view class="team_item_stats_item">
+            <text class="team_item_stats_item_value">{{item.recommended}}</text>
+            <text class="team_item_stats_item_name">推荐患者</text>
+          </view>
+          <view class="team_item_stats_item">
+            <text class="team_item_stats_item_value">{{item.initialApproval}}</text>
+            <text class="team_item_stats_item_name">初筛通过</text>
+          </view>
+          <view class="team_item_stats_item">
+            <text class="team_item_stats_item_value">{{item.reported}}</text>
+            <text class="team_item_stats_item_name">提报项目方</text>
+          </view>
+          <view class="team_item_stats_item">
+            <text class="team_item_stats_item_value">{{item.knowledge}}</text>
+            <text class="team_item_stats_item_name">知情成功</text>
+          </view>
+          <view class="team_item_stats_item">
+            <text class="team_item_stats_item_value">{{item.group}}</text>
+            <text class="team_item_stats_item_name">入组成功</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

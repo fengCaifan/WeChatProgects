@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/user/user",
     "pages/home/casebook/casebook",
-    "pages/home/apply/apply"
+    "pages/home/apply/apply",
+    "pages/user/team/team"
   ],
   "tabBar": {
     "list": [
