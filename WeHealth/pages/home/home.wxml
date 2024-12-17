@@ -1,17 +1,40 @@
 <!--pages/home/home.wxml-->
 <view class="page">
   <view class="home_header">
-    <view class="home_header_title">We Health</view>
-    <view class="home_header_desc">we health xxxxxx</view>
+    <image src="/assets/home_bg.jpg" class="home_header_img"></image>
+    <!-- banner -->
+    <view class="home_banner">
+    </view>
   </view>
-  <view class="func_entry">
-    <button class="func_entry_btn" bind:tap="gotoCaseBookPage">
-      <image src="/assets/case_book.png" class="func_entry_btn_icon" mode="aspectFill" mode="aspectFill"></image>
-      <view class="func_entry_btn_text">病历本</view>
-    </button>
-    <button class="func_entry_btn" bind:tap="gotoApplyPage">
-      <image src="/assets/apply.png" class="func_entry_btn_icon" mode="aspectFill"></image>
-      <view class="func_entry_btn_text">申请报名</view>
-    </button>
-  </view>
+
+    <view class="func_entry_container">
+      <!-- 左侧大块：邀请好友 -->
+      <view class="func_grid_item large_item">
+        <view class="large_item_content">
+          <view class="grid_text">
+            <text class="title">邀请好友</text>
+            <text class="subtitle">推荐好医生</text>
+          </view>
+          <image src="/assets/home_share.jpg" class="large_item_icon" mode="aspectFill"></image>
+        </view>
+      </view>
+  
+      <!-- 右侧上小块：上传病例 -->
+      <view class="func_grid_item small_item">
+        <view class="grid_text">
+          <text class="title">上传病例</text>
+          <text class="subtitle">上传图片病例</text>
+        </view>
+        <image src="/assets/case_book.png" class="grid-image"></image>
+      </view>
+  
+      <!-- 右侧下小块：提交申请 -->
+      <view class="func_grid_item small_item">
+        <view class="grid_text">
+          <text class="title">提交申请</text>
+          <text class="subtitle">填写xxxxx</text>
+        </view>
+        <image src="/assets/apply.png" class="grid-image"></image>
+      </view>
+    </view>
 </view>
