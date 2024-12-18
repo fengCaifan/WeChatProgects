@@ -35,7 +35,6 @@
     </view>
   </view>
 
-  <view class="section_gap"></view>
   <scroll-view class="menu_list" scroll-y="true">
       <view class="menu_item" wx:for="{{menuItems}}" wx:key="title" bindtap="menuItemClicked" data-title="{{item.title}}">
         <image class="menu_item_icon" src="{{item.icon}}"></image>
