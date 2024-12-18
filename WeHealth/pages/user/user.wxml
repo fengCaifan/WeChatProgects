@@ -1,55 +1,41 @@
 <!--pages/user/user.wxml-->
-<view class="page">
-  <view class="user_header" bind:tap="clickUserHeader">
-    <image class="user_avatar" src="/assets/default_avatar.png"></image>
+<view class="user_page">
+  <view class="header_section">
     <view class="user_detail">
-      <view class="user_name"> 昵称 </view>
-      <view class="user_phone"> 手机号 </view>
+      <text class="user_phone"> 152****5096 </text>
+    </view>
+    <view class="balance_section">
+      <view class="balance_item">
+        <text class="balance_item_detail">¥ 286.48</text>
+        <text class="balance_item_desc">已提现</text>
+      </view>
+      <view class="balance_item">
+        <text class="balance_item_detail">32</text>
+        <text class="balance_item_desc">邀请</text>
+      </view>
+    </view>
+
+    <!-- banner -->
+    <view class="award_section">
+      <text class="award_title"> 我的奖励 </text>
+      <view class="account_info">
+        <view class="account_item">
+          <text class="account_item_money">¥ 70.88</text>
+          <text class="account_item_desc">待入账</text>
+        </view>
+        <view class="account_item">
+          <text class="account_item_money">¥ 194.6</text>
+          <text class="account_item_desc">可提现</text>
+        </view>
+        <view class="account_item">
+          <text class="account_item_money">¥ 20</text>
+          <text class="account_item_desc">已提现</text>
+        </view>
+      </view>
     </view>
   </view>
 
-  <view class="balance_section">
-    <view class="balance_item">
-      <text>¥ 286.48</text>
-      <text class="balance_item_desc">累计佣金</text>
-    </view>
-    <view class="balance_item">
-      <text>32人</text>
-      <text class="balance_item_desc">下线</text>
-    </view>
-  </view>
-
-  <view class="account_head">
-    <text class="account_info_hint">账单信息</text>
-    <view>
-      <text class="withdrawal_details_hint">提现明细</text>
-      <image class="menu_item_arrow" src="/assets/arrow.png"></image>
-    </view>
-  </view>
-
-  <view class="padding_line"></view>
-  
-  <view class="account_info">
-    <view class="account_item">
-      <text class="account_item_money">¥ 70.88</text>
-      <text class="account_item_desc">待入账</text>
-    </view>
-    <view class="account_item">
-      <text class="account_item_money">¥ 194.6</text>
-      <text class="account_item_desc">可提现</text>
-    </view>
-    <view class="account_item">
-      <text class="account_item_money">¥ 20</text>
-      <text class="account_item_desc">已提现</text>
-    </view>
-  </view>
-
-  <view>
-    <button class="withdraw_btn">提现</button>
-  </view>
-  
   <view class="section_gap"></view>
-
   <scroll-view class="menu_list" scroll-y="true">
       <view class="menu_item" wx:for="{{menuItems}}" wx:key="title" bindtap="menuItemClicked" data-title="{{item.title}}">
         <image class="menu_item_icon" src="{{item.icon}}"></image>

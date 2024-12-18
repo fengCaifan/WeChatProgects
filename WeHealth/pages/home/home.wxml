@@ -1,5 +1,5 @@
 <!--pages/home/home.wxml-->
-<view class="page">
+<view class="home_page">
   <view class="home_header">
     <image src="/assets/home_bg.jpg" class="home_header_img"></image>
     <!-- banner -->
