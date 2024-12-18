@@ -31,9 +31,23 @@
 
     <view class="form_item">
       <text class="form_label">
+        <text class="required">*</text>联系电话
+      </text>
+      <input class="form_input" placeholder="请填写手机号码" />
+    </view>
+
+    <view class="form_item">
+      <text class="form_label">
+        <text class="required">*</text>验证码
+      </text>
+      <input class="form_input" placeholder="请填写验证码" />
+    </view>
+
+    <view class="form_item">
+      <text class="form_label">
         <text class="required">*</text>自述疾病名称
       </text>
-      <input class="form_input" placeholder="患者疾病名称" />
+      <textarea class="form_textarea" placeholder="自述患者疾病" value="{{textareaValue}}" bindinput="onTextareaChange"></textarea>
     </view>
 
     <view class="form_item">
@@ -42,5 +56,9 @@
       </text>
       <input class="form_input" placeholder="体能信息" />
     </view>
+  </view>
+
+  <view class="save_button_container">
+    <button class="save_button">保存并使用</button>
   </view>
 </view>

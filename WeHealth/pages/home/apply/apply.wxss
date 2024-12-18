@@ -50,3 +50,30 @@
   color: #333;
   background-color: #fff;
 }
+
+.form_textarea {
+  height: 100px;
+  padding: 20rpx;
+  border: 1px solid #dcdcdc;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  color: #333;
+  background-color: #fff;
+}
+
+.save_button_container {
+  padding: 20px;
+}
+
+.save_button {
+  width: 90%;
+  height: 80rpx;
+  padding: 10px;
+  margin-bottom: 60px;
+  font-size: 28rpx;
+  color: white;
+  background-color: rgb(236, 32, 32);
+  text-align: center;
+  font-size: 16px;
+  border-radius: 40px;
+}
