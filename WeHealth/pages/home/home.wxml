@@ -4,6 +4,17 @@
     <image src="/assets/home_bg.jpg" class="home_header_img"></image>
     <!-- banner -->
     <view class="home_banner">
+      <swiper class="banner" autoplay="true" interval="3000" duration="500">
+        <swiper-item>
+          <image class="banner-image" src="/assets/home_bg.jpg" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item>
+          <image class="banner-image" src="/assets/home_bg.jpg" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item>
+          <image class="banner-image" src="/assets/home_bg.jpg" mode="aspectFill"></image>
+        </swiper-item>
+      </swiper>
     </view>
   </view>
 
