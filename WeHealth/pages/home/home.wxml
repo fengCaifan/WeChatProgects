@@ -21,20 +21,24 @@
   
       <!-- 右侧上小块：上传病例 -->
       <view class="func_grid_item small_item">
-        <view class="grid_text">
-          <text class="title">上传病例</text>
-          <text class="subtitle">上传图片病例</text>
+        <view class="small_item_content">
+          <view class="grid_text">
+            <text class="title">上传病例</text>
+            <text class="subtitle">上传图片病例</text>
+          </view>
+          <image src="/assets/case_book.png" class="small_item_image"></image>
         </view>
-        <image src="/assets/case_book.png" class="grid-image"></image>
       </view>
   
       <!-- 右侧下小块：提交申请 -->
       <view class="func_grid_item small_item">
-        <view class="grid_text">
-          <text class="title">提交申请</text>
-          <text class="subtitle">填写xxxxx</text>
+        <view class="small_item_content">
+          <view class="grid_text">
+            <text class="title">提交申请</text>
+            <text class="subtitle">填写xxxxx</text>
+          </view>
+          <image src="/assets/apply.png" class="small_item_image"></image>
         </view>
-        <image src="/assets/apply.png" class="grid-image"></image>
       </view>
     </view>
 </view>

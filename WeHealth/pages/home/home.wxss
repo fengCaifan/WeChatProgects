@@ -38,10 +38,8 @@
   grid-template-columns: 1fr 1fr; /* 两列布局 */
   grid-template-rows: repeat(2, 1fr); /* 两行布局 */
   gap: 10px; /* 项目间距 */
-  width: 100%;
-  max-width: 600px;
-  box-sizing: border-box;
-  padding: 220rpx 24rpx;
+  margin-top: 220rpx;
+  padding: 24rpx;
 }
 
 /* 网格项的基础样式 */
@@ -67,6 +65,13 @@
   height: 100%;
 }
 
+.small_item_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* 上下布局 */
+  padding: 12rpx;
+}
+
 /* 标题和副标题（左上角） */
 .text-wrapper {
   display: flex;
@@ -75,19 +80,17 @@
 
 /* Icon（右下角） */
 .large_item_icon {
-  /* position: absolute; */
-  right: 10px;
-  bottom: 10px;
-  width: 50px;
-  height: 50px;
-  /* opacity: 0.8; 让图标稍微透明一点 */
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 100px;
+  height: 60px;
 }
 
 /* 图片样式 */
-.grid-image {
+.small_item_image {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
+  margin-left: 20px;
 }
 
 /* 文本区域 */
