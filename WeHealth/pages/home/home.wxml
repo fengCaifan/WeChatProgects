@@ -21,7 +21,7 @@
     <view class="func_entry_container">
       <!-- 左侧大块：邀请好友 -->
       <view class="func_grid_item large_item">
-        <view class="large_item_content">
+        <view class="large_item_content" bindtap="invitedFriends">
           <view class="grid_text">
             <text class="title">邀请好友</text>
             <text class="subtitle">推荐好医生</text>
@@ -52,4 +52,11 @@
         </view>
       </view>
     </view>
+
+    <modal
+     visible="{{modalVisible}}"
+      title="我的二维码"
+       image="/assets/home_bg.jpg"
+       buttonText="邀请好友加入" bind:buttontap="onModalButtonTap">
+    </modal>
 </view>

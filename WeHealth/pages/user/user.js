@@ -10,6 +10,7 @@ Page({
       {icon: "/assets/desc_test.png", title: "我的团队"},
       {icon: "/assets/desc_test.png", title: "我的二维码"}
     ],
+    modalVisible: false
   },
 
   /**
@@ -31,6 +32,10 @@ Page({
       wx.navigateTo({
         url: '/pages/user/team/team',
       })
+    } else if (title == "我的二维码") {
+      this.setData({
+        modalVisible: true
+      });
     } else {
       wx.showToast({
         title: `点击了 ${title}`,
@@ -38,5 +43,11 @@ Page({
         duration: 2000,
       });
     }
+  },
+
+  onModalButtonTap() {
+    this.setData({
+      modalVisible: false
+    });
   }
 })

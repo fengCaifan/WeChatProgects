@@ -107,7 +107,6 @@
   border-radius: 16rpx; /* 圆角 */
   width: 90%;
   box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.1);
-  /* padding: 24rpx; */
 }
 
 .menu_item {

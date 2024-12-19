@@ -1,0 +1,8 @@
+<!--components/CFModal.wxml-->
+<view class="modal-background" wx:if="{{visible}}" bindtap="hideModal">
+  <view class="modal-content" catchtap="preventTouchMove">
+    <view class="modal-title">{{title}}</view>
+    <image class="modal-image" src="{{image}}" mode="aspectFill"></image>
+    <button class="modal-button" bindtap="onButtonTap">{{buttonText}}</button>
+  </view>
+</view>

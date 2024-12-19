@@ -1,6 +1,8 @@
 // pages/home/home.js
 Page({
-  data: {},
+  data: {
+    modalVisible: false
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -20,5 +22,17 @@ Page({
       url: '/pages/home/apply/apply',
     })
   },
+
+  invitedFriends() {
+    this.setData({
+      modalVisible: true
+    })
+  },
+
+  onModalButtonTap() {
+    this.setData({
+      modalVisible: false
+    });
+  }
 
 })
