@@ -1,8 +1,11 @@
-<!--components/CFModal.wxml-->
+<!--components/QrcodeModal.wxml-->
 <view class="modal-background" wx:if="{{visible}}" bindtap="hideModal">
   <view class="modal-content" catchtap="preventTouchMove">
     <view class="modal-title">{{title}}</view>
-    <image class="modal-image" src="{{image}}" mode="aspectFill"></image>
+    <view class="qrcode-container">
+      <!-- <canvas canvas-id="{{canvasId}}" style="width: 200px; height: 200px;"></canvas> -->
+      <canvas type="2d" id="{{canvasId}}" style="width: 200px; height: 200px;"></canvas>
+    </view>
     <button class="modal-button" bindtap="onButtonTap">{{buttonText}}</button>
   </view>
 </view>

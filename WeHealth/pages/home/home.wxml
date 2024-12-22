@@ -55,8 +55,9 @@
 
     <modal
      visible="{{modalVisible}}"
-      title="我的二维码"
-       image="/assets/home_bg.jpg"
-       buttonText="邀请好友加入" bind:buttontap="onModalButtonTap">
+     title="我的二维码"
+     drawQrcodeText="https://www.baidu.com"
+     buttonText="邀请好友加入"
+     bind:buttontap="onModalButtonTap">
     </modal>
 </view>
